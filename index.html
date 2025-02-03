@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog sobre tecnologia e desenvolvimento">
+    <title>Blog Interativo</title>
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Blog Interativo Palmeiras</h1>
+        <nav>
+            <ul>
+                <li> <a href="#Novo-Artigo">Novo Artigo</a></li>
+                <li><a href="#Artigo">Artigo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Novo-Artigo">
+            <h2>Publicar novo artigo</h2>
+
+            <form action="">
+                
+                    <label for="nomeTitulo">Titulo:</label><br>
+                    <input type="text" id="nomeTitulo" name="nomeTitulo" placeholder="Insira o Titulo" required>
+                    <br>
+                    <label for="EscreverConteudo">Escreva o seu conteudo</label>
+                    <br>
+                    <textarea id="EscreverConteudo" placeholder="Escreva sua conteudo" rows="4" cols="50"></textarea>
+                    <br>
+                    <select name="conteudo" id="conteudo">
+                        <option value="elenco">Elenco</option>
+                        <option value="jogo">Jogos</option>
+                        <option value="titulos">Titulos</option>
+                        <option value="camisa">Camisa</option>
+                        <option value="patrocinios">Patrocinios</option>
+                        <option value="politica">Politica</option>
+                        <option value="cosmeticosPalmeiras">Cosmeticos do Palmeiras</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                    <br>
+                    <button type="submit" id="Btn-Publicar">Publicar artigo</button>
+                    <br>
+                
+            </form>
+        </section>
+
+        <section id="filter">
+            <h2 >Filtrar Categoria</h2>
+            
+                <input list="FiltrarCategoria">
+                <datalist id="FiltrarCategoria">
+                    <option value="Elenco"></option>
+                    <option value="Jogo"></option>
+                    <option value="Titulos"></option>
+                    <option value="Camisa"></option>
+                    <option value="Patrocinios"></option>
+                    <option value="Politica"></option>
+                    <option value="Cosmeticos do Palmeiras"></option>
+                    <option value="Outros"></option>
+                </datalist>
+            </section>
+        <section id="Artigo">
+            <h2>Artigos Publicados </h2>
+        </section>
+    </main>
+   
+    <footer>Desenvolvido por: ldb2010chefinho</footer>
+</body>
+</html>

@@ -35,6 +35,31 @@ main{
 
 }
 
+#Btn-Publicar{
+    background-color: darkgreen;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+    animation: pulsar 3s ;
+    position: relative;
+}
+
+#Btn-Publicar:hover{
+    animation-name: SubirBotao;
+    animation-duration: 3s;
+}
+
+@keyframes SubirBotao {
+    0% {background-color: rgb(77, 239, 77); top: 0px;}
+    25% {background-color: rgb(77, 239, 77); top: 15px;}
+    50% {background-color: rgb(77, 239, 77); top: 15px;}
+    75% {background-color: rgb(77, 239, 77); top: 0px;}
+    100% {background-color: darkgreen; top: 0px;}
+}
+
 footer{
     margin-top: 10px;
 }
